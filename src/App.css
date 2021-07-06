@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+ 
+  background-image: url("https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+}
+.headline{
+  margin: auto;
+  text-decoration: underline black;
+  font-size: 4rem;
 }
 
 .App-logo {
