@@ -9,8 +9,8 @@ function FetchData() {
   const [checkWeather,setCheckWeather] = useState(false);
   
   const inputRef = useRef();
-  const apiKey = "64fd34f49cad7e7ef6f22286e7aaf394"
-  const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const APIKEY = process.env.API_KEY;
+  const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`;
   const citiesApi = "https://api.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&appid=64fd34f49cad7e7ef6f22286e7aaf394";
 
   const cityName = useRef();
